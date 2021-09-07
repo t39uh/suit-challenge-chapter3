@@ -1,3 +1,6 @@
+package elements.parent
+
+import ResultSuit
 
 open class Suit(var name: String = "") {
     open fun loseTo(): String {
