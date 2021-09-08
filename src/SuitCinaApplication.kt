@@ -18,14 +18,12 @@ private fun startSuitWithCom() {
 
     println("computer milih -> ${compSuit.name}")
     println("input suit (kertas, gunting, batu)")
-    val input = readLine()
-
-    // TODO: 07/09/21 "Tugas buat hari kemis, 9/9/21" -> solved this line (use do-while)
-    /**
-     * Temen2 ngerjakan loop ketika user input selain gunting, batu, kertas
-     * User input selain gunting, batu, kertas -> fungsi redline s/d success -> di loop (diulangin)
-     * User disuruh input lagi
-     * */
+    
+    var input : String
+    do {
+        input = readLine().toString()
+    } while (input !in arrayOf("batu", "gunting", "kertas"))
+    
     do {
 //        val mySuit = when (input) {
 //            "gunting" -> Scissors(StringContainer.scissors)
